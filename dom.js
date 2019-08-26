@@ -80,15 +80,95 @@
 // secondItem.style.color = 'yellow';
 
 // QUERY SELECTOR ALL //
-var titles = document.querySelectorAll('.title');
+// var titles = document.querySelectorAll('.title');
 
-console.log(titles);
-titles[0].textContent = "Hello Jon";
+// console.log(titles);
+// titles[0].textContent = "Hello Jon";
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-var even = document.querySelectorAll('li:nth-child(even)');
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// var even = document.querySelectorAll('li:nth-child(even)');
 
-for (var i = 0; i < odd.length; i++) {
-    odd[i].style.backgroundColor = '#f4f4f4';
-    even[i].style.backgroundColor = '#f4f4f4';
-}
+// for (var i = 0; i < odd.length; i++) {
+//     odd[i].style.backgroundColor = '#f4f4f4';
+//     even[i].style.backgroundColor = '#f4f4f4';
+// }
+
+
+
+
+// TRAVERSING THE DOM //
+var itemList = document.querySelector('#items');
+// parentNode
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = '#f6f4';
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+// parentNode
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = '#f6f4';
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+//childNodes - nodelist(array)
+// console.log(itemList.childNodes); dont use this
+// use this
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = 'orange';
+
+
+// FirstChild - is kind of useless
+// console.log(itemList.firstChild);
+// // firstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = 'Hello 01';
+
+// lastChild
+// console.log(itemList.lastChild);
+// // lastElementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = 'Hello 4';
+
+
+
+// // nextSibling
+// console.log(itemList.nextSibling);
+// // nextElementSibling
+// console.log(itemList.nextElementSibling);
+
+
+// // previousSibling
+// console.log(itemList.previousSibling);
+// // previousElementSibling
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.color = 'green';
+
+
+
+
+// // Create a div
+// var newDiv = document.createElement('div');
+
+// // Add Class
+// newDiv.className = 'hello';
+// console.log(newDiv);
+
+// // Add id
+// newDiv.id = 'Hello11dgdf1';
+
+// // Add Artibute
+// newDiv.setAttribute('title', 'Hello Div');
+
+// // Create text node
+// var newDivText = document.createTextNode('Helllo Mr Tech');
+
+// //Add text to Div
+// newDiv.appendChild(newDivText);
+
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+
+// console.log(newDiv);
+
+// newDiv.style.fontSize = '60px';
+
+// container.insertBefore(newDiv, h1);
